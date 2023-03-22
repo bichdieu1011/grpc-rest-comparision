@@ -1,0 +1,15 @@
+/.vs/ProjectEvaluation/grpc-rest.metadata.v5.2
+/.vs/ProjectEvaluation/grpc-rest.projects.v5.2
+/.vs/gRPC-REST/DesignTimeBuild/.dtbcache.v2
+/.vs/gRPC-REST/FileContentIndex/4e0e8fca-3483-49b8-9803-8d21c2105b0f.vsidx
+/.vs/gRPC-REST/FileContentIndex/79f4444e-8e08-443d-bfc5-cda1acea92c0.vsidx
+/.vs/gRPC-REST/FileContentIndex/8ae895eb-5cc4-479f-b454-9db5f42ff972.vsidx
+/.vs/gRPC-REST/FileContentIndex/b1746a9a-32a4-4e97-9ac7-1ca1111de987.vsidx
+/.vs/gRPC-REST/FileContentIndex/read.lock
+/.vs/gRPC-REST/config/applicationhost.config
+/.vs/gRPC-REST/v17/.futdcache.v2
+
+*/bin/*
+*/obj/*
+
+/.vs/*

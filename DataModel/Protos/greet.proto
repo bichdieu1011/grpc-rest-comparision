@@ -1,0 +1,44 @@
+syntax = "proto3";
+
+option csharp_namespace = "Service.gRPC";
+
+package greet;
+import "google/protobuf/empty.proto";
+
+// The greeting service definition.
+service Testing {
+  // Sends a greeting
+  rpc GetId (GetIdRequest) returns (GetIdReply);
+  rpc GetStudentsInforAsList(EmptyRequest) returns ( ListStudents);
+  rpc GetStudentsInfor(EmptyRequest) returns ( stream ListStudents);
+  rpc PostStudentsInfor(ListStudents) returns (StatusResponse);
+
+}
+
+// The request message containing the user's name.
+message GetIdRequest {
+  int32 version = 1;
+}
+
+// The response message containing the greetings.
+message GetIdReply {
+  string id = 1;
+}
+
+message EmptyRequest{
+
+}
+
+message Student{
+	int32 Id = 1;
+	string FullName =2;
+	string Address = 3;
+}
+
+message ListStudents{
+	repeated Student Students =1;
+}
+
+message StatusResponse {
+	string status = 1;
+}
